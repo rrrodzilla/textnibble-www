@@ -8,12 +8,14 @@ Vue.use(VueRouter);
 const routes = [{
         path: "/",
         name: "Home",
-        component: Home
+        component: Home,
+        meta: { gtm: 'Home' }
     },
     {
         path: "/privacy",
         name: "Privacy",
-        component: Privacy
+        component: Privacy,
+        meta: { gtm: 'Privacy' }
     },
     {
         path: "/about",

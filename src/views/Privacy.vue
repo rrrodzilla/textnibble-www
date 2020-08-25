@@ -497,8 +497,11 @@ export default {
   methods: {
     goBack: function() {
       this.$router.back();
-//      console.log(this.$router, pus); // this gave result
+      //      console.log(this.$router, pus); // this gave result
     }
+  },
+  mounted() {
+    this.$gtm.trackView("Home", "currentpath");
   }
 };
 </script>

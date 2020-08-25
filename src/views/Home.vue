@@ -838,6 +838,9 @@ export default {
           console.log(error);
         });
     }
+  },
+  mounted() {
+    this.$gtm.trackView("Privacy", "currentpath");
   }
 };
 </script>
